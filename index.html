@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Day 11 | If My Heart Could Speak ❤️</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <!-- Animated background -->
+    <canvas id="particles"></canvas>
+
+    <div class="glow glow-one"></div>
+    <div class="glow glow-two"></div>
+
+    <main class="container">
+
+        <!-- INTRODUCTION -->
+        <section id="intro" class="scene">
+
+            <p class="day-label">DAY 11 · A MESSAGE FROM MY HEART</p>
+
+            <h1>
+                If My Heart<br>
+                <span>Could Speak ❤️</span>
+            </h1>
+
+            <p class="intro-text">
+                Nithya, there are some feelings that words
+                cannot fully explain. Today, let my heart
+                say a little something to you.
+            </p>
+
+            <div class="heart-wrapper">
+                <div class="main-heart" id="mainHeart">❤️</div>
+            </div>
+
+            <p class="hint">
+                ✨ Something special is waiting inside ✨
+            </p>
+
+            <button id="startBtn" class="primary-btn">
+                ❤️ LET MY HEART SPEAK
+            </button>
+
+        </section>
+
+
+        <!-- THREE HEART MESSAGES -->
+        <section id="messagesSection" class="hidden">
+
+            <p class="day-label">THREE LITTLE THINGS I WANT TO SAY</p>
+
+            <h2>Listen to My Heart 💗</h2>
+
+            <p class="subtitle">
+                Touch each heart to discover its message.
+            </p>
+
+            <div class="heart-grid">
+
+                <!-- HEART 1 -->
+                <button class="heart-card" data-message="feelings">
+
+                    <span class="card-heart">❤️</span>
+
+                    <span class="card-title">What I Feel</span>
+
+                    <span class="card-hint">Tap to reveal</span>
+
+                </button>
+
+
+                <!-- HEART 2 -->
+                <button class="heart-card" data-message="wishes">
+
+                    <span class="card-heart">💗</span>
+
+                    <span class="card-title">What I Wish for You</span>
+
+                    <span class="card-hint">Tap to reveal</span>
+
+                </button>
+
+
+                <!-- HEART 3 -->
+                <button class="heart-card" data-message="remember">
+
+                    <span class="card-heart">💖</span>
+
+                    <span class="card-title">What to Remember</span>
+
+                    <span class="card-hint">Tap to reveal</span>
+
+                </button>
+
+            </div>
+
+
+            <!-- MESSAGE DISPLAY -->
+            <div id="messageBox" class="message-box hidden">
+
+                <div id="messageIcon" class="message-icon">❤️</div>
+
+                <h3 id="messageTitle"></h3>
+
+                <p id="messageText"></p>
+
+                <button id="closeMessageBtn" class="secondary-btn">
+                    CLOSE MESSAGE
+                </button>
+
+            </div>
+
+
+            <p id="progress" class="progress">
+                0 of 3 hearts discovered
+            </p>
+
+
+            <button id="finalBtn" class="primary-btn hidden">
+                💖 REVEAL THE FINAL SURPRISE
+            </button>
+
+        </section>
+
+
+        <!-- FINAL SURPRISE -->
+        <section id="finalSection" class="hidden">
+
+            <div class="final-heart">💖</div>
+
+            <p class="day-label">A LITTLE MESSAGE JUST FOR YOU</p>
+
+            <h2>
+                Keep Shining,<br>
+                <span>Nithya ❤️</span>
+            </h2>
+
+            <p class="final-text">
+                I hope you achieve every dream you carry in your heart.
+                Keep believing in yourself, keep growing, and never
+                stop working towards the future you imagine.
+            </p>
+
+            <p class="final-text">
+                Your happiness matters. Your dreams matter.
+                And I hope life gives you countless reasons to smile.
+            </p>
+
+            <div class="countdown-box">
+
+                <span id="days">3</span>
+
+                <p>DAYS UNTIL YOUR BIRTHDAY 🎂</p>
+
+            </div>
+
+            <p class="signature">
+                Always cheering for you,<br>
+                <strong>Amarnath ❤️</strong>
+            </p>
+
+            <p class="ending">
+                DAY 11 · MORE SURPRISES AWAIT ✨
+            </p>
+
+        </section>
+
+    </main>
+
+    <footer>
+        MADE WITH LOVE · 11 / 10 / 2026 ❤️
+    </footer>
+
+    <script src="./script.js"></script>
+
+</body>
+</html>
